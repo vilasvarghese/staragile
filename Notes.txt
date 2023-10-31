@@ -1,0 +1,1433 @@
+DevOps Curriculum
+Duration of the training 98 hours
+Overall Q&A session
+24.5hrs
+Orientation session
+2.5hrs
+Introduction and Installation session 2.5hrs
+Module 1
+Total: 25hrs
+
+DevOps Overview		4hrs
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Evolution of Waterfall, Agile and DevOps
+-----------------------------------------------------------------------------------------------
+
+The evolution of software development methodologies from Waterfall to Agile to DevOps reflects changing philosophies and approaches to building and delivering software. Here's a brief overview of the evolution of these methodologies:
+
+1. Waterfall:
+	Requirement gathering and analysis 
+		SRS (System requirement specification) 
+	Software Design 
+	Coding 
+	Testing 
+		Release 
+	Maintenance
+
+	traditional and linear project management methodology.
+	widely used in the early days of software development.
+	Sequential phases: 
+		requirements, 
+		design, 
+		implementation, 
+		testing, 
+		deployment, and 
+		maintenance.
+	Each phase must be completed before moving to the next.
+	Focus on 
+		comprehensive documentation and planning.
+	Lack of flexibility and adaptability.
+
+2. Agile:
+
+	Agile methodologies
+		like Scrum and Extreme Programming (XP)
+			emerged as a response to the limitations of Waterfall.
+	Agile emphasizes 
+		flexibility
+		collaboration
+		iterative development.
+	Development occurs 
+		in short iterations or 
+			sprints
+			typically lasting 2-4 weeks.
+	Continuous feedback and adaptation are key principles.
+	Agile teams work closely with stakeholders
+		focus on 
+			delivering working software frequently.
+	Agile values 
+		individuals and interactions 
+			over processes and tools.
+
+
+3. DevOps:
+
+	DevOps 
+		bridges the gap between 
+			development (Dev) and IT operations (Ops).
+	Aims to streamline 
+		software delivery process
+			from development to deployment and maintenance.
+	DevOps emphasizes 
+		collaboration
+		automation
+		continuous execution (CI/CD).
+	Break down of silos between 
+		development and 
+		operations teams.
+	Automation and automation tools are central to DevOps practices	
+		Infrastructure as code (IaC)
+			Infrastructure provisioning 
+			Configuration managment
+			Containerization 
+			Orchestation 
+			Artifactory management 
+			etc
+	Goal 
+		continous faster and more reliable software delivery
+		reduce the time from code commit to production deployment.
+	The evolution from Waterfall to Agile to DevOps 
+		progression from a 
+			rigid, plan-driven approach 
+				to a more flexible and collaborative one
+					focus on 
+						automation and continuous improvement. 
+	
+	Agile was a significant shift toward more adaptive and customer-centric software development. 
+		quicker feedback 
+		ability to change direction as requirements evolved.
+
+	DevOps extends this evolution by 
+		focusing on the entire software delivery pipeline
+			from code development 
+			to deployment and ongoing maintenance. 
+		It encourages a culture of collaboration and automation
+			lead to more reliable and rapid software delivery.
+
+Many organizations today adopt a hybrid approach
+	combining elements of these methodologies based on their specific needs and constraints
+		which is often referred to as "Agile-DevOps" or "DevOps-Agile" to get the best of both worlds.
+
+-----------------------------------------------------------------------------------------------
+	• What is DevOps
+	-----------------------------------------------------------------------------------------------
+	
+DevOps is a set of practices and principles aimed at improving collaboration and communication between software development (Dev) and IT operations (Ops) teams. The primary goal of DevOps is to streamline and automate the software development and delivery process, enabling organizations to build, test, and deploy software more rapidly and reliably. Here's a detailed overview of what DevOps entails:
+
+Collaboration and Communication:
+	DevOps encourages a cultural shift in organizations by promoting collaboration and open communication between development and operations teams.
+	It breaks down traditional silos and fosters a sense of shared responsibility for the entire software development lifecycle.
+Automation:
+	Automation is a key aspect of DevOps. It involves automating repetitive, manual tasks throughout the software delivery process.
+	Common automation practices include continuous integration (CI), continuous delivery (CD), and infrastructure as code (IaC).
+	Automation leads to faster, more consistent, and error-free software deployments.
+
+Continuous Integration (CI):
+	CI is the practice of frequently integrating code changes into a shared repository.
+	Automated builds and tests are triggered whenever code changes are committed, ensuring that new code does not introduce defects.
+	CI helps catch and resolve issues early in the development process.
+
+Continuous Delivery (CD):
+	CD extends CI by automating the entire software release process.
+	It allows for the rapid, reliable, and automated deployment of tested code to production or staging environments.
+	CD enables organizations to release new features and bug fixes more frequently.
+
+Infrastructure as Code (IaC):
+	IaC involves managing and provisioning infrastructure using code and automation tools.
+	Infrastructure configurations are codified, versioned, and treated like software, making it easier to create and manage environments consistently.
+
+Monitoring and Feedback:
+	DevOps emphasizes continuous monitoring of applications and infrastructure in production.
+	Real-time feedback helps identify and address issues quickly and improve system performance.
+	Monitoring tools and alerting systems are integral to DevOps practices.
+
+Security (DevSecOps):
+	Security is integrated into the entire DevOps process, leading to the emergence of the DevSecOps approach.
+	Security practices, such as code scanning and vulnerability assessments, are automated and included in the pipeline.
+	Security is not a bottleneck but an integral part of the development process.
+
+Microservices and Containers:
+	DevOps often aligns with microservices architecture and containerization, such as Docker and Kubernetes.
+	Microservices enable applications to be broken down into smaller, independently deployable components.
+	Containers provide consistency between development and production environments.
+
+Culture and Mindset:
+	DevOps is not just about tools and processes; it's also about cultural transformation.
+	Teams must embrace a DevOps mindset of shared ownership, collaboration, and a willingness to learn and improve continually.
+
+Measuring and Optimizing:
+	DevOps encourages the measurement of key performance indicators (KPIs) to assess the effectiveness of processes and make data-driven improvements.
+	Common KPIs include lead time, deployment frequency, change failure rate, and mean time to recovery.
+	DevOps is a holistic approach to software development and delivery that aims to increase the speed, quality, and reliability of software releases while fostering a culture of collaboration and continuous improvement. It has become a fundamental practice for modern software development and is essential for organizations looking to stay competitive in today's fast-paced digital world.
+	
+-----------------------------------------------------------------------------------------------
+	• Why DevOps
+	-----------------------------------------------------------------------------------------------
+	
+	DevOps 
+		adopted by organizations for several compelling reasons
+			offers a wide range of benefits 
+			address common challenges in software development and IT operations. 
+	Some key reasons why organizations embrace DevOps:
+
+		Faster Software Delivery: 
+			DevOps practices, such as continuous integration (CI) and continuous delivery (CD), automate and streamline the software development and deployment process. This results in faster delivery of new features, bug fixes, and updates to end-users.
+		Improved Collaboration: 
+			DevOps encourages closer collaboration and communication between development and operations teams. This collaboration helps resolve issues faster, reduces misunderstandings, and leads to better overall outcomes.
+		Enhanced Quality: 
+			Automation of testing and deployment processes helps catch and fix issues earlier in the development cycle. This results in higher software quality, reduced defects, and improved customer satisfaction.
+		Increased Reliability: 
+			Automated infrastructure provisioning, along with configuration management and monitoring, enhances system stability and reduces downtime. This reliability is crucial for mission-critical applications.
+		Efficient Resource Utilization: 
+			DevOps practices, such as infrastructure as code (IaC) and containerization, enable efficient resource utilization and scalability, reducing waste and lowering infrastructure costs.
+		Reduced Risk: 
+			With automated testing, rollback mechanisms, and real-time monitoring, DevOps reduces the risk associated with software releases. Teams can quickly identify and address issues, minimizing the impact of failures.
+		Scalability: 
+			DevOps practices, including container orchestration tools like Kubernetes, allow organizations to scale applications seamlessly, adapting to changes in demand and business requirements.
+		Competitive Advantage: 
+			Rapid and frequent software delivery allows organizations to respond quickly to market changes, customer feedback, and emerging opportunities. This can provide a significant competitive advantage.
+		Cost Efficiency: 
+			Automation, scalability, and efficient resource management can lead to cost savings in infrastructure, operations, and development.
+		Cultural Transformation: 
+			DevOps promotes a cultural shift within organizations, fostering a mindset of continuous improvement, collaboration, and learning. This cultural transformation can lead to a more engaged and motivated workforce.
+		Feedback-Driven Development: 
+			DevOps emphasizes continuous monitoring and feedback, helping teams make data-driven decisions to improve software and processes continually.
+		Alignment with Business Goals: 
+			DevOps helps ensure that technology and development efforts are aligned with the broader business goals and customer needs.
+		Streamlined Compliance: 
+			By automating and documenting processes, DevOps can help organizations meet regulatory and compliance requirements more effectively.
+		Simplified Recovery: 
+			In the event of failures or disruptions, DevOps practices, including infrastructure recovery, allow for faster and more efficient restoration of services.
+
+		Security Integration (DevSecOps): DevOps practices can integrate security into the development pipeline, making security a proactive part of the process rather than a reactive step. This reduces security vulnerabilities and improves compliance.
+
+In summary, organizations adopt DevOps to address the challenges of modern software development, improve collaboration, enhance the quality and reliability of their applications, and remain competitive in a fast-paced digital world. DevOps is not just a set of practices but a cultural and organizational shift that can lead to significant business benefits.
+	
+-----------------------------------------------------------------------------------------------
+	• Benefits of DevOps
+	-----------------------------------------------------------------------------------------------
+	DevOps offers a wide range of benefits to organizations that adopt its practices and principles. These benefits span various aspects of software development, delivery, and operations. Here are some of the key advantages of implementing DevOps:
+
+		Faster Time to Market: 
+			DevOps practices, such as continuous integration and continuous delivery (CI/CD), automate and streamline the software development and deployment process. This results in quicker release cycles and faster delivery of new features and updates to end-users.
+		Improved Collaboration: 
+			DevOps promotes collaboration and communication between development and operations teams. This closer collaboration helps in resolving issues faster, reducing misunderstandings, and enhancing overall productivity.
+		Enhanced Software Quality: 
+			Automated testing, code reviews, and continuous integration help catch and fix issues earlier in the development cycle, leading to higher software quality, reduced defects, and improved customer satisfaction.
+		Greater Reliability: 
+			DevOps practices, including infrastructure as code (IaC), configuration management, and real-time monitoring, enhance system stability and reduce downtime, leading to more reliable and available systems.
+		Efficient Resource Utilization: 
+			DevOps practices, including IaC and containerization, enable efficient resource allocation, scaling, and management, reducing waste and lowering infrastructure costs.
+		Reduced Risk: 
+			With automated testing, rollback mechanisms, and real-time monitoring, DevOps reduces the risk associated with software releases. Teams can quickly identify and address issues, minimizing the impact of failures.
+		Scalability: 
+			DevOps practices, including container orchestration tools like Kubernetes, allow organizations to scale applications seamlessly, adapting to changes in demand and business requirements.
+		Cost Efficiency: 
+			Automation, scalability, and efficient resource management can lead to cost savings in infrastructure, operations, and development.
+		Competitive Advantage: 
+			Rapid and frequent software delivery allows organizations to respond quickly to market changes, customer feedback, and emerging opportunities. This can provide a significant competitive advantage.
+		Cultural Transformation: 
+			DevOps promotes a cultural shift within organizations, fostering a mindset of continuous improvement, collaboration, and learning. This cultural transformation can lead to a more engaged and motivated workforce.
+		Feedback-Driven Development: 
+			DevOps emphasizes continuous monitoring and feedback, helping teams make data-driven decisions to improve software and processes continually.
+		Alignment with Business Goals: 
+			DevOps helps ensure that technology and development efforts are aligned with the broader business goals and customer needs.
+		Streamlined Compliance: 
+			By automating and documenting processes, DevOps can help organizations meet regulatory and compliance requirements more effectively.
+		Simplified Recovery: 
+			In the event of failures or disruptions, DevOps practices, including infrastructure recovery, allow for faster and more efficient restoration of services.
+		Greater Transparency: 
+			DevOps practices often include improved visibility into the entire software development and delivery pipeline, leading to better traceability and accountability.
+		Reduced Lead Time: 
+			The time from concept to delivery is shortened with DevOps, enabling faster responses to market changes and customer demands.
+		Security Integration (DevSecOps): 
+			DevOps can integrate security into the development pipeline, making security a proactive part of the process rather than a reactive step. This reduces security vulnerabilities and improves compliance.
+
+In summary, DevOps is not just a set of practices; it's a cultural and organizational shift that can lead to significant business benefits, including faster delivery, improved collaboration, higher quality software, greater reliability, and enhanced competitiveness. These benefits make DevOps a valuable approach for modern software development and IT operations.
+
+
+
+
+-----------------------------------------------------------------------------------------------
+	• DevOps Stages
+	-----------------------------------------------------------------------------------------------
+	
+	
+DevOps encompasses a series of stages or phases that organizations follow to streamline their software development and deployment processes. While the specific stages and their order may vary from one organization to another, the core DevOps stages typically include the following:
+
+Plan:
+	In this stage, teams define and plan the software development and delivery pipeline.
+	Key activities include setting project goals, defining requirements, and prioritizing tasks.
+	Teams often use project management and collaboration tools for planning and tracking work.
+Code:
+
+	This stage involves actual development and coding activities.
+	Developers write, review, and commit code to version control systems (e.g., Git).
+	Collaboration and code review tools are essential for effective code development.
+Build:
+
+	The build stage focuses on compiling, packaging, and creating deployable artifacts from the source code.
+	Automated build tools, like Jenkins or Travis CI, are commonly used in this stage.
+	The goal is to produce a version of the software that's ready for testing.
+Test:
+
+	Testing is a critical phase in DevOps. It includes unit testing, integration testing, and other forms of testing (e.g., regression, security, and performance testing).
+	Automated testing tools are integral to ensure rapid and reliable feedback.
+	Test automation frameworks and test suites are often used for this purpose.
+Integrate:
+
+	Continuous Integration (CI) is a key DevOps practice. In this stage, changes from multiple developers are frequently integrated into a shared codebase.
+	Automated CI pipelines build and test the code whenever changes are pushed to the version control system.
+	This practice helps catch and address integration issues early.
+Deploy:
+
+	The deployment stage involves packaging and deploying the application to various environments (e.g., development, staging, and production).
+	Continuous Delivery (CD) practices automate the deployment process, ensuring consistency and reliability.
+	Infrastructure as Code (IaC) tools are often used to provision and configure environments.
+Monitor:
+
+	Continuous monitoring is a key part of DevOps, providing real-time visibility into application and infrastructure performance.
+	Monitoring tools track application health, resource utilization, and user experience.
+	Alerts and notifications are generated for potential issues.
+Release:
+
+	The release stage involves coordinating the deployment of new features or updates to end-users.
+	Release management practices aim to minimize downtime and user impact.
+	Blue-green deployments or canary releases are strategies used to roll out changes incrementally.
+Configure:
+
+	Configuration management and automation tools are used to ensure consistency in application and infrastructure configurations.
+	Changes to configuration settings can be tracked, versioned, and automated.
+	This stage ensures that the deployed environments are consistent and reproducible.
+Optimize:
+
+	Continuous improvement is a fundamental aspect of DevOps. Teams analyze performance data, user feedback, and incident reports to identify areas for optimization.
+	Continuous deployment practices may involve A/B testing and feature flagging to assess the impact of changes.
+	These DevOps stages are often interconnected and may involve feedback loops, enabling teams to make improvements and adjustments throughout the software development lifecycle. Continuous integration and continuous delivery (CI/CD) pipelines are commonly used to automate and streamline the flow of code from development to production, while monitoring and feedback mechanisms help ensure that software remains reliable and performant.
+
+
+
+	
+-----------------------------------------------------------------------------------------------
+	• DevOps Lifecycle
+	-----------------------------------------------------------------------------------------------
+	The DevOps lifecycle represents the end-to-end process of software development and delivery with a focus on collaboration, automation, and continuous improvement. The DevOps lifecycle typically encompasses several stages, and it aims to streamline the flow of code from development to production while maintaining a high level of quality, reliability, and efficiency. Here are the key stages in the DevOps lifecycle:
+
+Plan:
+
+	In the planning stage, teams define the scope of the project, set goals, and determine the requirements.
+	Key activities include roadmap planning, backlog creation, and defining the project's objectives.
+	Collaboration and project management tools are often used to facilitate planning.
+Code:
+
+	Development begins in the "Code" stage, where developers write, review, and commit code changes.
+	Version control systems, such as Git, are used to manage and track code changes.
+	Collaboration tools help developers work together efficiently.
+Build:
+
+	The "Build" stage involves compiling, packaging, and creating deployable artifacts from the source code.
+	Automated build tools, like Jenkins or Travis CI, are used to generate these artifacts.
+	The goal is to produce a version of the software that is ready for testing.
+Test:
+
+	Testing is a critical phase in the DevOps lifecycle, encompassing various forms of testing, such as unit testing, integration testing, regression testing, security testing, and performance testing.
+	Automated testing tools are essential to ensure rapid and reliable feedback.
+	Test automation frameworks and test suites help maintain quality.
+Integrate:
+
+	The "Integrate" stage focuses on continuous integration (CI). Changes from multiple developers are regularly integrated into a shared codebase.
+	Automated CI pipelines build and test the code whenever changes are pushed to the version control system.
+	This practice helps catch and address integration issues early.
+Deploy:
+
+	The "Deploy" stage involves packaging and deploying the application to various environments, including development, staging, and production.
+	Continuous delivery (CD) practices automate the deployment process to ensure consistency and reliability.
+	Infrastructure as Code (IaC) tools are often used to provision and configure environments.
+Operate (Monitor):
+
+	Continuous monitoring and operation practices provide real-time visibility into application and infrastructure performance.
+	Monitoring tools track application health, resource utilization, and user experience.
+	Alerts and notifications are generated for potential issues, helping maintain high availability and performance.
+Release:
+
+	In the "Release" stage, teams coordinate the deployment of new features or updates to end-users.
+	Release management practices aim to minimize downtime and user impact during deployment.
+	Strategies like blue-green deployments or canary releases may be used to roll out changes incrementally.
+Configure:
+
+	Configuration management and automation tools are used in the "Configure" stage to ensure consistency in application and infrastructure configurations.
+	Changes to configuration settings can be tracked, versioned, and automated to achieve consistent and reproducible environments.
+Optimize:
+
+	The "Optimize" stage emphasizes continuous improvement based on data and feedback.
+	Teams analyze performance data, user feedback, and incident reports to identify areas for optimization.
+	Continuous deployment practices, A/B testing, and feature flagging are used to assess the impact of changes.
+The DevOps lifecycle is a continuous and iterative process, with each stage building on the previous one. Collaboration, automation, and feedback loops are fundamental to the success of the DevOps approach, enabling teams to deliver high-quality software more efficiently and with greater reliability.
+	
+-----------------------------------------------------------------------------------------------
+	• Various Automation in DevOps
+	-----------------------------------------------------------------------------------------------
+	
+	Automation is a fundamental aspect of DevOps, enabling organizations to streamline processes, reduce manual work, and ensure consistency and reliability in software development and delivery. There are various areas of automation in DevOps, including:
+
+Continuous Integration (CI):
+
+	CI automation involves automatically building, testing, and integrating code changes from multiple developers into a shared repository.
+	CI tools like Jenkins, Travis CI, and CircleCI automate the build and test process, providing rapid feedback to developers.
+Continuous Delivery (CD):
+
+	CD automation extends CI by automating the deployment and delivery process.
+	It enables the automatic release of tested code to various environments, such as development, staging, and production.
+	Tools like Kubernetes, Docker, and deployment pipelines are used for CD automation.
+Infrastructure as Code (IaC):
+
+	IaC automates the provisioning and management of infrastructure resources.
+	Tools like Terraform and AWS CloudFormation allow you to define infrastructure configurations as code, making it reproducible and versionable.
+Configuration Management:
+
+	Configuration management tools automate the configuration of servers and applications.
+	Tools like Ansible, Puppet, and Chef ensure that systems are consistently configured and that changes can be automated and tracked.
+Automated Testing:
+
+	Automated testing encompasses various types of tests, including unit tests, integration tests, regression tests, security tests, and performance tests.
+	Test automation frameworks and tools (e.g., Selenium, JUnit, JMeter) enable the automatic execution of tests.
+Deployment Automation:
+
+	Deployment automation ensures that applications are deployed consistently and reliably.
+	Tools like Kubernetes, Docker Swarm, and Red Hat OpenShift automate container orchestration and deployment.
+Monitoring and Alerting:
+
+	Monitoring and alerting tools automate the collection of performance data and the generation of alerts for potential issues.
+	Tools like Prometheus, Nagios, and ELK Stack provide automated monitoring capabilities.
+Release Management:
+
+	Release management automation helps coordinate and track the deployment of new features or updates.
+	Release pipelines and management tools automate release workflows and minimize downtime during releases.
+Security Scanning:
+
+	Automated security scanning tools (e.g., OWASP ZAP, SonarQube) help identify vulnerabilities and security issues in code and dependencies.
+	These tools are integrated into the development pipeline for continuous security assessment.
+Compliance and Governance:
+
+	Automation is used to ensure compliance with regulatory requirements and internal governance policies.
+	Tools and scripts automate compliance checks and reporting.
+Log Analysis:
+
+	Log analysis tools automate the collection, storage, and analysis of log data from applications and infrastructure.
+	They help troubleshoot issues and gain insights into system behavior.
+Backup and Disaster Recovery:
+
+	Automation is crucial for scheduling and executing backups and implementing disaster recovery plans.
+	Tools automate data backup and recovery processes.
+Scaling and Load Balancing:
+
+	Automation is used to dynamically scale applications and distribute traffic using load balancers.
+	Cloud services and infrastructure tools provide automated scaling and load balancing features.
+Patch Management:
+
+	Patch management tools automate the process of applying patches and updates to operating systems and software components.
+	Automation ensures systems remain secure and up to date.
+Self-Service Environments:
+
+	Automation allows developers and teams to provision and manage their development and testing environments.
+	Self-service environments reduce wait times and improve developer productivity.
+	Automation in DevOps accelerates software delivery, reduces human errors, and enables teams to focus on more strategic and creative tasks, ultimately improving the overall quality and efficiency of software development and deployment processes.
+	
+-----------------------------------------------------------------------------------------------
+	• Overview of CICD
+	-----------------------------------------------------------------------------------------------
+	
+	CI/CD, which stands for Continuous Integration and Continuous Delivery (or Continuous Deployment), is a set of practices and principles in DevOps aimed at automating and streamlining the software development and delivery process. CI/CD enables teams to develop, test, and deliver software more rapidly, reliably, and efficiently. Here's an overview of CI/CD:
+
+Continuous Integration (CI):
+
+	Continuous Integration is the practice of frequently integrating code changes from multiple developers into a shared repository.
+	Key CI principles include automated builds, automated testing, and rapid feedback to developers.
+	Developers commit code changes to a version control system (e.g., Git), and CI tools automatically build and test the code.
+	CI ensures that new code changes do not introduce defects and that integration issues are identified and addressed early.
+Continuous Delivery (CD):
+
+	Continuous Delivery extends CI by automating the deployment and delivery of tested code to various environments.
+	It enables the automatic release of code to development, staging, and production environments.
+	The CD process includes configuration management, deployment automation, and environment provisioning.
+	CD ensures that software is in a deployable state at all times, and the manual intervention required for releases is minimal.
+Continuous Deployment (CD):
+
+	Continuous Deployment goes a step further by automatically deploying code changes to production once they pass automated tests and quality checks.
+	This practice is suitable for organizations with a high level of confidence in their CI/CD pipeline.
+	CD requires robust testing and monitoring to ensure that production releases are stable and reliable.
+Key Benefits of CI/CD:
+
+	Faster Delivery: CI/CD shortens development cycles, allowing teams to release new features and updates more quickly.
+	Reduced Risk: Automation reduces the risk of human errors and ensures that code is consistently tested and deployed.
+	Consistency: CD practices lead to consistent, repeatable, and reliable deployment processes.
+	Improved Quality: Frequent testing and automated quality checks result in higher software quality.
+	Rapid Feedback: CI provides rapid feedback to developers, allowing them to address issues promptly.
+	Efficiency: CI/CD automates time-consuming and repetitive tasks, improving developer and operational efficiency.
+	Collaboration: CI/CD fosters collaboration among development, operations, and other teams.
+	Cost Savings: By reducing manual intervention and eliminating unnecessary rework, CI/CD can lead to cost savings.
+
+CI/CD Tools and Technologies:
+
+	CI/CD pipelines are often built using a combination of various tools, including Jenkins, Travis CI, CircleCI, GitLab CI/CD, and GitHub Actions for CI.
+	For CD and deployment automation, containerization technologies like Docker and container orchestration platforms like Kubernetes are commonly used.
+	Configuration management tools like Ansible, Puppet, and Chef help automate infrastructure provisioning and management.
+	Overall, CI/CD practices are essential for modern software development, allowing organizations to respond to market changes, customer feedback, and emerging opportunities more rapidly and with greater reliability. They help ensure that software is always in a deployable state, making the development and delivery process more efficient and collaborative.
+
+
+
+
+
+	
+-----------------------------------------------------------------------------------------------
+AWS Fundamentals	10hrs
+	• Understanding of Physical and Virtual Servers
+	-----------------------------------------------------------------------------------------------
+	
+	
+	Physical and virtual servers are two distinct types of computing infrastructure used to host and run applications, websites, and other services. Each has its own characteristics, advantages, and use cases. Here's an understanding of physical and virtual servers:
+
+Physical Servers:
+	Hardware-Based: Physical servers are physical machines with dedicated hardware components, including processors, memory, storage, and network interfaces.
+	Isolation: Each physical server operates independently of other physical servers, providing complete isolation. This means that the resources of one physical server are not shared with others.
+	Performance: Physical servers typically offer high performance and low latency because they have direct access to hardware resources.
+	Scalability: Scaling physical servers usually involves adding more hardware, which can be a time-consuming and costly process.
+	Resource Utilization: Physical servers may not utilize their resources efficiently, as they are provisioned with a fixed amount of CPU, memory, and storage, and these resources may remain underutilized.
+	Maintenance: Maintenance and upgrades, such as hardware replacement or component repairs, can result in downtime and service interruptions.
+	Resource Allocation: Allocating physical servers for specific tasks may require advanced capacity planning and can be inflexible.
+
+Virtual Servers:
+
+	Software-Based: Virtual servers, or virtual machines (VMs), are software instances that run on physical servers. Each VM operates as if it were an independent physical server.
+	Isolation: VMs are isolated from each other, providing a level of separation similar to that of physical servers.
+	Performance: VM performance may be slightly lower than physical servers due to the overhead of virtualization, but it is often more than adequate for most workloads.
+	Scalability: Virtual servers can be rapidly provisioned and scaled up or down by adding or removing VMs on the same physical hardware.
+	Resource Utilization: Virtualization allows for better resource utilization, as multiple VMs can share the same physical hardware, making it more cost-effective.
+	Maintenance: VMs can be migrated to other physical servers for maintenance, reducing downtime and service interruptions.
+	Resource Allocation: Resource allocation to VMs can be adjusted dynamically, offering flexibility and efficient resource utilization.
+
+Use Cases:
+	Physical servers are suitable for high-performance applications, database servers, and workloads that require dedicated hardware resources.
+	Virtual servers are ideal for consolidating multiple workloads on a single physical server, which is cost-effective and space-efficient. They are commonly used for web hosting, development and testing environments, and in cloud computing platforms.
+
+In summary, the choice between physical and virtual servers depends on specific use cases, performance requirements, scalability needs, and resource utilization goals. Many organizations use a combination of physical and virtual servers to meet their diverse computing needs. Virtualization technologies, like VMware, Hyper-V, and KVM, have become widely adopted because they offer flexibility and efficient resource utilization while still providing isolation and security.
+
+-----------------------------------------------------------------------------------------------
+	• Overview of Public/Private Cloud Computing
+	-----------------------------------------------------------------------------------------------
+	Public and private cloud computing are two distinct models for delivering and managing cloud-based IT services. Each model has its own characteristics, advantages, and use cases. Here's an overview of public and private cloud computing:
+
+Public Cloud Computing:
+
+Ownership and Access:
+
+	Public clouds are owned and operated by third-party cloud service providers (e.g., AWS, Microsoft Azure, Google Cloud Platform).
+	Services and resources are accessible to the general public or subscribers who pay for usage.
+Scalability and Flexibility:
+
+	Public clouds offer scalability on-demand. Users can easily scale up or down their resources as needed.
+	They provide a wide range of services, including compute, storage, networking, databases, and more.
+Cost Model:
+
+	Public clouds typically follow a pay-as-you-go or subscription-based pricing model.
+	Users pay only for the resources and services they consume, making it cost-effective for many businesses.
+Management and Maintenance:
+
+	Cloud service providers handle the management, maintenance, and security of the infrastructure.
+	Users focus on deploying and managing their applications and data.
+Shared Resources:
+
+	Public clouds are multi-tenant environments where multiple users share the same underlying infrastructure.
+	Resource allocation and isolation are handled by the cloud provider.
+Security and Compliance:
+
+	Public cloud providers offer a range of security and compliance features, but users are responsible for securing their applications and data.
+	Compliance requirements may vary by industry and region.
+Use Cases:
+
+	Public clouds are well-suited for a wide range of use cases, including web hosting, development and testing, data analytics, and scalable web applications.
+	They are particularly useful for startups and organizations looking for cost-effective and easily scalable solutions.
+Private Cloud Computing:
+
+Ownership and Access:
+
+	Private clouds are owned and operated by a single organization, which can be an enterprise or a cloud provider serving a specific client.
+	Access is restricted to a defined set of users within the organization.
+Control and Isolation:
+
+	Private clouds offer greater control, isolation, and customization. Organizations can tailor the cloud environment to meet their specific requirements.
+	Resources are dedicated to the organization, ensuring greater privacy and security.
+Cost Model:
+
+	Private clouds may involve higher upfront costs for infrastructure and setup.
+	Some private cloud solutions are subscription-based, while others may follow a self-hosted, on-premises model.
+Management and Maintenance:
+
+	Organizations are responsible for managing and maintaining their private cloud infrastructure, including hardware and software.
+	This approach provides full control over security and compliance.
+Resource Allocation:
+
+	Resource allocation is determined by the organization, allowing for fine-grained control over resource utilization.
+Security and Compliance:
+
+	Private clouds are often chosen by organizations with strict security and compliance requirements, such as those in healthcare, finance, or government.
+	Organizations have greater control over security practices and regulatory compliance.
+Use Cases:
+
+	Private clouds are suitable for organizations with sensitive data, regulatory constraints, or specific infrastructure requirements.
+	They are commonly used in industries where data privacy and control are paramount.
+In summary, public and private cloud computing models offer different trade-offs in terms of cost, control, scalability, and security. Many organizations adopt a hybrid cloud approach, combining elements of both public and private clouds to meet their diverse IT needs and achieve a balance between cost-effectiveness and security.
+	
+-----------------------------------------------------------------------------------------------
+	• Overview of AWS/Azure/GCP
+	-----------------------------------------------------------------------------------------------
+	
+	Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) are three of the leading cloud service providers, offering a wide range of cloud computing services and solutions. Each has its unique features and strengths. Here's an overview of each:
+
+Amazon Web Services (AWS):
+	Market Leader: AWS is one of the pioneers of cloud computing and holds a significant market share in the industry. It offers a vast array of services and has data centers in multiple regions worldwide.
+	Service Variety: AWS provides a comprehensive selection of cloud services, including computing, storage, databases, machine learning, analytics, IoT, and more.
+	Global Reach: AWS has a global network of data centers (availability zones) in multiple regions, making it suitable for businesses with international operations.
+	Ecosystem: AWS has a large and active user community, and it offers various tools and resources for developers, including AWS Lambda, Amazon EC2, and Amazon S3.
+	Enterprise-Focused: AWS is well-suited for large enterprises and businesses with diverse and complex infrastructure needs. It also offers specialized services for various industries.
+	Security and Compliance: AWS provides a robust set of security features and compliance certifications. It includes services like AWS Identity and Access Management (IAM) and AWS Key Management Service (KMS).
+	Pricing Flexibility: AWS offers a flexible pricing model, including pay-as-you-go and reserved instances, to accommodate various business needs and budgets.
+
+Microsoft Azure:
+
+	Integration with Microsoft Products: Azure is tightly integrated with Microsoft products, making it an excellent choice for organizations already using Windows Server, Active Directory, and other Microsoft technologies.
+	Hybrid Cloud: Azure offers hybrid cloud solutions, allowing seamless integration between on-premises infrastructure and the cloud. Azure Stack extends Azure services to on-premises environments.
+	Enterprise Solutions: Azure provides a wide range of services, including virtual machines, databases, AI and machine learning, IoT, and DevOps tools. It also supports multiple programming languages and frameworks.
+	Global Presence: Azure has data centers in multiple regions, enabling organizations to deploy applications and services close to their users.
+	Comprehensive Developer Tools: Azure DevOps and Visual Studio Team Services provide a suite of development and DevOps tools for building, testing, and deploying applications.
+	Security and Compliance: Azure offers robust security features and certifications, including Azure Active Directory and Azure Security Center.
+	Pricing Flexibility: Azure offers flexible pricing models, including pay-as-you-go and reserved instances. It provides Azure Cost Management tools to help manage and optimize spending.
+
+Google Cloud Platform (GCP):
+
+	Data and Machine Learning: GCP excels in data analytics and machine learning, offering BigQuery for data warehousing and TensorFlow for deep learning.
+	Global Network: Google's global network infrastructure is known for its speed and reliability, making it ideal for applications requiring low latency.
+	Containers and Kubernetes: GCP is a leader in containerization with Google Kubernetes Engine (GKE) and Google Cloud Container Registry.
+	Serverless Computing: GCP offers serverless computing options with Google Cloud Functions and Cloud Run, enabling developers to focus on code rather than infrastructure.
+	Open Source and Multi-Cloud Strategy: GCP is committed to open source technologies and a multi-cloud approach, allowing customers to work with hybrid and multi-cloud deployments.
+	Security and Compliance: GCP provides a range of security tools, including Identity and Access Management (IAM) and Security Command Center, along with a focus on data privacy.
+	Pricing Flexibility: GCP offers various pricing options, including sustained use discounts and committed use contracts, as well as tools for cost management.
+
+In summary, the choice between AWS, Azure, and GCP depends on an organization's specific needs, existing technology stack, and strategic goals. Each provider has a unique set of services and capabilities, and businesses often use a combination of multiple cloud providers to meet their diverse requirements.
+
+
+
+
+
+	
+-----------------------------------------------------------------------------------------------
+	• Benefits of Cloud Computing
+	-----------------------------------------------------------------------------------------------
+	Cloud computing offers a wide range of benefits to businesses and individuals, transforming the way IT services are delivered, managed, and consumed. Some of the key benefits of cloud computing include:
+
+		Cost Efficiency:
+			Cloud computing eliminates the need for significant upfront capital investments in hardware and data centers. Instead, it offers pay-as-you-go and subscription-based pricing models, reducing infrastructure and operational costs.
+		Scalability:
+			Cloud services are highly scalable, allowing businesses to easily expand or shrink their computing resources based on demand. This flexibility is particularly valuable for seasonal or unpredictable workloads.
+		Accessibility:
+			Cloud services are accessible from anywhere with an internet connection. This enables remote work, collaboration, and access to applications and data on a global scale.
+		Reliability and High Availability:
+			Leading cloud providers, such as AWS, Azure, and GCP, offer robust, redundant data centers and networks. This results in high levels of availability, often exceeding what individual organizations can achieve.
+		Security:
+			Cloud providers invest heavily in security measures, including encryption, identity and access management, and monitoring. They often have dedicated security teams and certifications to ensure data protection.
+		Disaster Recovery:
+			Cloud services provide built-in disaster recovery and backup solutions, reducing the risk of data loss and downtime in case of hardware failure or natural disasters.
+		Automatic Updates:
+			Cloud providers handle software and infrastructure updates, reducing the burden on organizations to maintain and patch their systems.
+		Global Reach:
+			Cloud providers have data centers in multiple regions around the world, enabling businesses to deploy services close to their customers and users.
+		Innovation and Agility:
+			Cloud computing allows organizations to experiment with new technologies and services without significant investments. It enables rapid development, testing, and deployment of applications.
+		Resource Optimization:
+			Cloud services promote resource utilization, allowing organizations to provision exactly the amount of computing resources needed and avoid over-provisioning.
+		Environmentally Friendly:
+			By sharing resources in multi-tenant data centers and optimizing server usage, cloud computing can be more energy-efficient and environmentally friendly compared to traditional on-premises data centers.
+		Collaboration and Mobility:
+			Cloud-based collaboration tools and storage solutions enable teams to work together from anywhere, fostering productivity and flexibility.
+		Data Analytics and Big Data:
+			Cloud computing offers access to powerful data analytics tools and services, making it easier to process and analyze large datasets for insights and decision-making.
+		Integration and Interoperability:
+			Cloud services often provide APIs and integration options, making it easier to connect and collaborate with other services and applications.
+		Reduced Maintenance Burden:
+			Cloud providers handle much of the infrastructure and platform maintenance, allowing organizations to focus more on their core business functions and applications.
+In summary, cloud computing provides a wide range of advantages, including cost savings, scalability, accessibility, security, and the ability to leverage advanced technologies. Businesses and individuals can harness the power of the cloud to drive innovation, reduce costs, and improve the efficiency of their IT operations.
+	
+-----------------------------------------------------------------------------------------------
+	• Pricing and Usage Policy
+	-----------------------------------------------------------------------------------------------
+	
+	The pricing and usage policy in cloud computing is a critical aspect that outlines how customers are charged for using cloud services and what terms and conditions apply to the use of those services. It is essential for customers to understand the pricing and usage policy of their chosen cloud provider to manage costs effectively and comply with the provider's terms. Here are some key elements typically found in cloud pricing and usage policies:
+
+Pricing Models:
+	Cloud providers offer various pricing models, including pay-as-you-go, reserved instances, and spot instances. Each model has its own cost structure, and customers should choose the one that aligns with their needs.
+
+Pricing Details:
+	Pricing policies provide detailed information about the cost of individual services, data transfer, storage, and other resources. Customers can review this information to estimate their expenses.
+
+Usage Monitoring:
+	Cloud providers track customer usage of their services and resources. Customers can access usage reports and dashboards to monitor their consumption and costs.
+
+Billing Cycle:
+	Pricing policies specify the billing cycle, which is typically monthly. Customers are billed for the services they use during the billing period.
+
+Payment Methods:
+	Cloud providers outline accepted payment methods, which may include credit cards, bank transfers, purchase orders, and invoicing options.
+
+Overage Charges:
+	Pricing policies often explain overage charges that apply when customers exceed their allocated resources or quotas. These charges can significantly impact costs.
+
+Free Tier:
+	Many cloud providers offer a free tier with limited access to certain services. Pricing policies detail the specific services included in the free tier and the usage limits.
+
+Discounts and Commitments:
+	Customers can often achieve cost savings through commitments or volume discounts. The pricing policy explains the terms and conditions for these options.
+
+Data Transfer Costs:
+	Data transfer, both inbound and outbound, may incur additional charges. Pricing policies provide details about data transfer pricing.
+
+Termination and Cancellation:
+	The policy may outline the terms and conditions for terminating or canceling services. It's important to understand any associated costs or commitments.
+
+Service Level Agreements (SLAs):
+	SLAs specify the provider's commitment to service uptime and performance. The policy may explain how service credits are calculated and applied in case of SLA violations.
+
+Compliance and Data Protection:
+	The policy may include information about regulatory compliance and data protection, especially for customers handling sensitive data.
+
+Support and Service Levels:
+	Cloud providers offer different support levels with varying response times and coverage. The pricing policy details the cost and terms of available support plans.
+
+Resale and Redistribution:
+	Some cloud providers may have restrictions on the resale or redistribution of their services. Customers should be aware of these limitations.
+
+Acceptable Use Policies:
+	Cloud providers typically have acceptable use policies that outline what is and isn't allowed on their platforms. Violating these policies can lead to service termination or penalties.
+
+Customers should carefully review the pricing and usage policy of their chosen cloud provider and regularly monitor their usage to avoid unexpected costs. It's also important to take advantage of cost optimization tools and practices to ensure efficient use of cloud resources.
+	
+-----------------------------------------------------------------------------------------------
+	• Overview of IAM Service
+	-----------------------------------------------------------------------------------------------
+	
+	IAM (Identity and Access Management) is a crucial service provided by many cloud computing platforms and organizations to manage and control access to resources within a computing environment. It focuses on the identification of users and their permissions to access various services and resources. Here's an overview of IAM services:
+
+Key Components and Features of IAM:
+
+User Management:
+	IAM allows administrators to create and manage user accounts, including adding or removing users, resetting passwords, and configuring multi-factor authentication (MFA).
+
+Group Management:
+	Users can be organized into groups based on their roles or responsibilities. Group permissions can be applied collectively, making access management more efficient.
+
+Role-Based Access Control (RBAC):
+	IAM enables the implementation of role-based access control, where specific permissions are assigned to roles, and users or groups are assigned to those roles.
+
+Permission Policies:
+	Users, groups, and roles are associated with permission policies that define what actions they can perform on specific resources. These policies are typically defined in a structured, JSON-like format.
+
+Fine-Grained Permissions:
+	IAM allows for fine-grained control of access to resources, specifying actions, resources, and conditions for granting or denying access.
+
+Multi-Factor Authentication (MFA):
+	MFA can be enabled to add an extra layer of security by requiring users to provide two or more authentication factors, such as a password and a one-time code from a mobile app.
+
+Federation:
+	IAM often supports federated identity, allowing organizations to integrate their existing identity systems with the cloud platform. This can be useful for single sign-on (SSO) solutions.
+
+Auditing and Logging:
+	IAM services typically provide audit logs that capture user activity and access attempts. These logs help in security analysis and compliance monitoring.
+
+Temporary Credentials:
+	IAM can issue temporary credentials with limited lifetimes, useful for granting temporary access to resources and improving security.
+
+Use Cases for IAM:
+	User Access Control: IAM ensures that users have appropriate access to services and resources based on their roles and responsibilities.
+	Data Security: Organizations can use IAM to control access to sensitive data, preventing unauthorized users from accessing or modifying it.
+	Compliance and Governance: IAM services help organizations meet regulatory compliance requirements by enforcing access controls and providing audit trails.
+	Identity Federation: IAM supports integration with external identity providers, allowing users to access cloud services using their existing credentials.
+	Security Best Practices: IAM is a fundamental security practice for ensuring least privilege access, which limits access to only what is necessary for users to perform their jobs.
+	Efficient Resource Management: By organizing users and roles and setting permissions, organizations can efficiently manage their cloud resources and prevent unauthorized resource utilization.
+	Auditing and Monitoring: IAM logs provide insights into user activities, facilitating security incident detection and post-incident analysis.
+
+IAM services play a critical role in cloud security, access management, and resource governance. When properly configured and maintained, IAM helps organizations maintain a strong security posture and ensure the confidentiality, integrity, and availability of their resources.
+	
+-----------------------------------------------------------------------------------------------
+	• Overview of EC2 Service
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of RDS Service
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of Cloud Storages
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of Public and Private Ips
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of Elastic IP, CloudFront and ELB.
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of EKS, ACR:
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	Practical Includes
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+		1. AWS Free Tier Account Creation
+		-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+		2. IAM User Creation
+		-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+		3. EC2 Instance Creation
+		-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+		4. Security Group Configuration
+		-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+		5. Creation of database using RDS
+		-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+		6. Connecting Ec2 Instance
+		-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+		7. Connecting database
+		-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+		8. Creation of S3 storage
+		-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+		DevOps on Cloud (AWS)
+		-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+4hrs
+	• Overview of AWS DevOps and Azure DevOps
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Cod Build,
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Code Commit,
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Code Deploy
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Code Pipeline
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Working with Cloud Formation
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Linux Fundamentals
+7hrs
+	• Overview of Linux
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Linux Architecture
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Linux Distributions
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Basic Linux Commands
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• File Permission Management
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• User Creation
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Shell Scripts
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• SSH and VI Utility
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Practical Includes:
+	1. Creation of User.
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	2. Establishing SSH Connection to the Server
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	3. File creation and Manipulation using VI editor
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	4. Managing permissions
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	5. Basic commands execution
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	6. Writing Shell Scripts Program
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Module 2
+Total :25hrs
+Application Development Fundamentals	4hrs
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of Application Development
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Various Types of Application
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Introduction to Databases
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Multi-tiered application architecture
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of Monolithic and Microservices
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Introduction to Java Concepts	4hrs
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of Java and its Architecture
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Compiling Source Code and Packaging Applications
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Java Console based and Web based Applications
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Deployment to Tomcat and Consuming Java Applications
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• OOPs Concept Practical Includes
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Practical Includes
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	1. Create a Console based Java Application
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	2. Create a Dynamic web Application and Deploy it to Tomcat Server
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Understanding and Using Build Tools	4hrs
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of Various Build Tools
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• What is Maven • Maven Architecture
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Maven Plugins
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Maven Archetypes
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Maven Commands
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Integration of Jacoco plugin for Code Coverage
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Setting up Maven Applications
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Practical Includes:
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	1. Creation of Simple Java Application using Maven
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	2. Creation of Java Web Application using Maven
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	3. Creation of Java Spring Boot Microservice using Maven
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	4. Maven Commands demonstration to Build, Test and Package the projects
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Overview of Python	4hrs
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of Python
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Features, Benefits, Uses of Python
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Installation and Setup of Python Environment
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Python Console based application and Web Application using Flask
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Deploying and Consuming Python Applications
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Practical Includes
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	1. Create a Console based Python Application
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	2. Create a Web Application using Flask
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Structure Query Language (SQL)
+4hrs
+	• Overview of SQL
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• DDL Statements
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• DML Statements
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• DCL Statements
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Database Constraints
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Aggregate Functions (Avg, Sum, Max, Min, Count)
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Order By, Group By and Having Clauses
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Various types of Joins
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Practical Includes:
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	1. Create and Alter and Drop Tables
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	2. Insert, Update, Delete and View Data
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	3. Apply database constraints
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	4. Statements execution using Order By, Group By and Having clauses
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	5. Applying Joins, Executing Subqueries and Aggregate functions
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Module 3
+Total: 7hrs
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Managing Source Code – Git and GitHub	7hrs
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of Version Control System
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Central vs Distributed Version Control System
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Introduction to Git
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Installation and setting up Git
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Important Git Commands
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Creating and Managing git Repositories
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Branching, Merging, Stashing, Rebasing, Reverting and Resetting
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Introduction to GitHub
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Managing Remote Repositories
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Practical includes:
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	1. Installation and Configuration of git
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	2. Creating Git Repositories
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	3. Demonstrating various Git repositories
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	4. Merging Branches and Managing merge conflicts
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	5. Stashing, Reverting, Rebasing and Resetting
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	6. Collaborating local and remote repositories
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Module 4
+Total: 9hrs
+Continuous Integration Using Jenkins	9hrs
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of Continuous Integration
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Difference between Continuous vs Traditional Integration
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of Jenkins
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Jenkins Master-Slave Architecture
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Jenkins Installation and Configuration
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Jenkins Plugins • Jenkins Management
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Jenkins Freestyle and Pipeline Jobs
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Scripted and Declarative Pipelines
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Configuring Slave Node to Jenkins
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Practical Includes:
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	1. Installation and Configuration of Jenkins
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	2. Configuration of Tools
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	3. Configuration of Plugins
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	4. Creation of Freestyle Jobs, scripted and declarative pipeline jobs
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	5. Demonstrate pipeline triggering using GitHub webhooks
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	6. Scripted and Declarative pipelines
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	7. Integration of Code Coverage Tools and Static Code analysis tools
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	8. Triggering pipelines using Git Web Hooks
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	9. Creation of CICD pipelines
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	10. Adding slave node to Jenkins
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Module 5
+Total:12hrs
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Containerization, Docker, and Docker Hub	6hrs
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Introduction to Virtualization and Containerization
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• What is Containerization
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Docker Architecture
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of Docker Hub
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Docker Installation
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Docker Commands
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Container Modes
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Port Binding
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Docker file
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Managing Docker Images
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Running and Managing Containers
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Docker Volume
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Docker Compose
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of Docker Swarm
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Practical Includes:
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	1. Installation of Docker and Docker Compose on AWS EC2
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	2. Running Docker Commands
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	3. Writing Docker Files for various applications
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	4. Building Docker Images
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	5. Pushing Images to Docker Hub
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	6. Running Docker Containers,
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	7. Container Port Binding
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	8. Running multiple containers using Docker Compose file
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	9. Persisting container data using Docker Volume.
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	10. Initialize a docker swarm and demonstrate workload deployments
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Container Orchestration Tool - Kubernetes	6hrs
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of Container Orchestration
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Different between Docker swarm and Kubernetes Cluster
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Kubernetes Architecture
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Installation of Kubernetes – Minikube and EKS
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Kubernetes Nodes
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Kubernetes Pods
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Kubernetes Deployments
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Rolling updates and rollbacks
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Scaling up and down of the application
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Services in Kubernetes
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Practical Includes:
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	1. Installation and configuration of Kubernetes Minikube
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	2. Creation of Pods and Deployments using ad-hoc Commands
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	3. Creation of Pods and Deployments using YAML files
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	4. Scaling up and Scaling Down of the application
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	5. Rolling out Deployments and Rolling Back
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	6. Creation of Services
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Module 6
+Total: 9hrs
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Configuration Automation using Ansible	5hrs
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of Configuration Automation
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Introduction to Ansible
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Ansible Architecture
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Components of Ansible
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Installation and Configuration of Ansible
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Ansible ad-hoc commands
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Ansible Playbooks
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Ansible Variables
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Ansible Handlers
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Ansible Role using Ansible Galaxy
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Practical Includes:
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	1. Installation and Configuration Ansible
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	2. Running Ansible ad-hoc commands.
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	3. Writing Ansible Playbooks to Configure Servers
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	4. Creating Ansible Roles
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Terraform Overview
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+4hrs
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Introduction to Terraform
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Terraform Vs Ansible
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Terraform Architecture
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Terraform Configuration
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Terraform Commands
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Managing Terraform Resources
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Terraform End to End Project
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Practical’s Includes:
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	1. Installation of Terraform on AWS EC2 Instance
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	2. Writing Terraform Configuration
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	3. Creation of AWS EC2 instance using terraform
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	4. Managing AWS resources using terraform
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	5. End to End Infrastructure Creation Project.
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Module 7
+Total :5hrs
+Continuous Monitoring using Prometheus and Grafana
+5hrs
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Overview of continuous monitoring
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Continuous monitoring tools in DevOps
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Installation and Configuration of Prometheus and Grafana
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Prometheus Architecture
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Monitoring using Prometheus
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	• Dashboard visualization using Grafana
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Practical Includes:
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	1. Installation and Configuration of tools
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	2. Monitoring Targets using Prometheus
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+	3. Visualizing Reports using Grafana
+	-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Capstone Project
+Total :10hrs
+Projects
+10hrs	
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+1. Project 1: Finance Me - Finance and Banking Domain
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+2. Project 2: Medi cure - Health Domain
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+3. Project 3: Insurance Me - Insurance Domain
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
